@@ -13,7 +13,7 @@ function Header() {
         <Results />
         <SearchPosts />
         <button
-          className="border-2 border-purple-400 p-2 bg-purple-400"
+          className="border-2 border-[#B197FC] p-2 bg-[#B197FC]"
           onClick={onClearPosts}
         >
           Clear posts
@@ -43,32 +43,5 @@ function Results() {
     <p className="text-2xl font-semibold">
       🚀 {posts.length} atomic posts found
     </p>
-  )
-}
-
-function Posts() {
-  return (
-    <section>
-      <List />
-    </section>
-  )
-}
-
-function List() {
-  const { posts } = usePosts()
-
-  return (
-    <>
-      <ul>
-        {posts.map((post, i) => (
-          <li key={i}>
-            <h3>{post.title}</h3>
-            <p>{post.body}</p>
-          </li>
-        ))}
-      </ul>
-
-      {/* <Test /> */}
-    </>
   )
 }
