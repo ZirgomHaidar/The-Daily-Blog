@@ -53,4 +53,4 @@ function usePosts() {
   return context
 }
 
-export { PostProvider, usePosts }
+export { PostProvider, usePosts, createRandomPost }

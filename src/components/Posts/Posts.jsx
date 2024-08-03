@@ -13,10 +13,10 @@ function List() {
 
   return (
     <>
-      <ul className=" grid grid-cols-4 gap-8">
+      <ul className="grid grid-cols-5 gap-8">
         {posts.map((post, i) => (
           <li
-            className="border border-[#B197FC] py-4 px-5  hover:bg-[#B197FC]"
+            className="border border-[#B197FC] py-4 px-5 hover:bg-[#B197FC]"
             key={i}
           >
             <h3 className="text-xl font-medium mb-4 capitalize">

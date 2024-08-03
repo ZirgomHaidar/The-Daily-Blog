@@ -4,7 +4,7 @@ import { usePosts } from "../PostContext/PostContext"
 function Header() {
   const { onClearPosts } = usePosts()
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between mb-8">
       <span className="flex items-center gap-3">
         <img className="w-12" src={blogicon} alt="Blog" />
         <h1 className="text-4xl font-bold">The Daily Blog</h1>
@@ -12,12 +12,7 @@ function Header() {
       <div className="post flex items-center gap-5">
         <Results />
         <SearchPosts />
-        <button
-          className="border-2 border-[#B197FC] p-2 bg-[#B197FC]"
-          onClick={onClearPosts}
-        >
-          Clear posts
-        </button>
+        <button onClick={onClearPosts}>Clear posts</button>
       </div>
     </header>
   )
